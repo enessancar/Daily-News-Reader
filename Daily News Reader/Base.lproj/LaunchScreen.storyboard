@@ -15,20 +15,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="newsLaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="0f1-kc-8w5">
-                                <rect key="frame" x="37" y="203" width="301" height="212"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9J-DB-SKS">
-                                <rect key="frame" x="159" y="117" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9J-DB-SKS">
+                                <rect key="frame" x="159" y="117" width="0.0" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily News Reader" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHR-LF-2yc">
+                                <rect key="frame" x="27" y="125" width="339" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="339" id="cFw-Ug-Xyl"/>
+                                    <constraint firstAttribute="height" constant="54" id="oZi-Fw-x30"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newsLaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="0f1-kc-8w5">
+                                <rect key="frame" x="15" y="212" width="362" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="362" id="DyI-M6-7XS"/>
+                                    <constraint firstAttribute="height" constant="300" id="ap3-E6-GaF"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.43573578394062251" green="0.39245220145793924" blue="0.52487768308080807" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.62746533203998534" green="0.71462522710161591" blue="1" alpha="0.76821192052980136" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uHR-LF-2yc" secondAttribute="trailing" constant="27" id="8ud-Tf-yoV"/>
+                            <constraint firstItem="0f1-kc-8w5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="aTy-6A-Jp2"/>
+                            <constraint firstItem="uHR-LF-2yc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="fQD-z3-pGs"/>
+                            <constraint firstItem="0f1-kc-8w5" firstAttribute="top" secondItem="uHR-LF-2yc" secondAttribute="bottom" constant="33" id="gwU-ry-MvW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0f1-kc-8w5" secondAttribute="trailing" constant="16" id="lcY-GC-pgT"/>
+                            <constraint firstItem="uHR-LF-2yc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="66" id="mLM-Lf-mLL"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC0623E72B5AC1710004B5E4 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0623E62B5AC1710004B5E4 /* ForgotPasswordView.swift */; };
+		EC0623E92B5AC2810004B5E4 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0623E82B5AC2810004B5E4 /* ForgotPasswordVC.swift */; };
+		EC0623EC2B5AC4D20004B5E4 /* HelpAndSupportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0623EB2B5AC4D20004B5E4 /* HelpAndSupportVC.swift */; };
+		EC0623EE2B5AC4DA0004B5E4 /* HelpAndSupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0623ED2B5AC4DA0004B5E4 /* HelpAndSupportView.swift */; };
+		EC0623F02B5AC5550004B5E4 /* FontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0623EF2B5AC5550004B5E4 /* FontSize.swift */; };
 		EC9195702B594F2D000EF206 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC91956F2B594F2D000EF206 /* AppDelegate.swift */; };
 		EC9195722B594F2D000EF206 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9195712B594F2D000EF206 /* SceneDelegate.swift */; };
 		EC9195792B594F2F000EF206 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC9195782B594F2F000EF206 /* Assets.xcassets */; };
@@ -44,9 +49,16 @@
 		EC9195D42B59C1BE000EF206 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9195D32B59C1BE000EF206 /* SearchVC.swift */; };
 		EC9195D72B59C1D8000EF206 /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9195D62B59C1D8000EF206 /* FavoritesVC.swift */; };
 		EC9195DA2B59C208000EF206 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9195D92B59C208000EF206 /* ProfileVC.swift */; };
+		EC9195DD2B5A774A000EF206 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9195DC2B5A774A000EF206 /* LoginView.swift */; };
+		EC9195DF2B5A774E000EF206 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9195DE2B5A774E000EF206 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC0623E62B5AC1710004B5E4 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		EC0623E82B5AC2810004B5E4 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		EC0623EB2B5AC4D20004B5E4 /* HelpAndSupportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpAndSupportVC.swift; sourceTree = "<group>"; };
+		EC0623ED2B5AC4DA0004B5E4 /* HelpAndSupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpAndSupportView.swift; sourceTree = "<group>"; };
+		EC0623EF2B5AC5550004B5E4 /* FontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSize.swift; sourceTree = "<group>"; };
 		EC91956C2B594F2D000EF206 /* Daily News Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily News Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC91956F2B594F2D000EF206 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC9195712B594F2D000EF206 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +91,8 @@
 		EC9195D32B59C1BE000EF206 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		EC9195D62B59C1D8000EF206 /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
 		EC9195D92B59C208000EF206 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		EC9195DC2B5A774A000EF206 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		EC9195DE2B5A774E000EF206 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +113,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC0623E52B5AC1680004B5E4 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				EC0623E62B5AC1710004B5E4 /* ForgotPasswordView.swift */,
+				EC0623E82B5AC2810004B5E4 /* ForgotPasswordVC.swift */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		EC0623EA2B5AC4890004B5E4 /* HelpAndSupport */ = {
+			isa = PBXGroup;
+			children = (
+				EC0623EB2B5AC4D20004B5E4 /* HelpAndSupportVC.swift */,
+				EC0623ED2B5AC4DA0004B5E4 /* HelpAndSupportView.swift */,
+			);
+			path = HelpAndSupport;
+			sourceTree = "<group>";
+		};
 		EC9195632B594F2D000EF206 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +163,7 @@
 		EC9195832B595F44000EF206 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				EC0623EA2B5AC4890004B5E4 /* HelpAndSupport */,
 				EC9195D82B59C1E8000EF206 /* Profile */,
 				EC9195D52B59C1CF000EF206 /* Favorites */,
 				EC9195D22B59C1AE000EF206 /* Search */,
@@ -215,6 +248,7 @@
 				EC9195AC2B59931C000EF206 /* UIViewController+Ext.swift */,
 				EC9195AE2B5993A9000EF206 /* UIView+Ext.swift */,
 				EC9195C32B59B61E000EF206 /* Color+Ext.swift */,
+				EC0623EF2B5AC5550004B5E4 /* FontSize.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -251,6 +285,8 @@
 		EC9195C62B59BD13000EF206 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				EC0623E52B5AC1680004B5E4 /* ForgotPassword */,
+				EC9195DB2B5A773D000EF206 /* Login */,
 				EC9195C72B59BD1A000EF206 /* Register */,
 			);
 			path = Auth;
@@ -303,6 +339,16 @@
 				EC9195D92B59C208000EF206 /* ProfileVC.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		EC9195DB2B5A773D000EF206 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EC9195DC2B5A774A000EF206 /* LoginView.swift */,
+				EC9195DE2B5A774E000EF206 /* LoginVC.swift */,
+			);
+			name = Login;
+			path = "Logşin";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,14 +439,18 @@
 			files = (
 				EC91958F2B5972E4000EF206 /* NewsModel.swift in Sources */,
 				EC9195972B5975E6000EF206 /* BodyLabel.swift in Sources */,
+				EC0623E92B5AC2810004B5E4 /* ForgotPasswordVC.swift in Sources */,
+				EC0623EE2B5AC4DA0004B5E4 /* HelpAndSupportView.swift in Sources */,
 				EC9195AF2B5993A9000EF206 /* UIView+Ext.swift in Sources */,
 				EC9195AD2B59931C000EF206 /* UIViewController+Ext.swift in Sources */,
 				EC9195B22B599712000EF206 /* CustomTextField.swift in Sources */,
 				EC9195DA2B59C208000EF206 /* ProfileVC.swift in Sources */,
+				EC0623EC2B5AC4D20004B5E4 /* HelpAndSupportVC.swift in Sources */,
 				EC9195AB2B5992E9000EF206 /* CustomError.swift in Sources */,
 				EC9195912B59734B000EF206 /* OnboardingModel.swift in Sources */,
 				EC9195B52B59AC67000EF206 /* AuthViewModel.swift in Sources */,
 				EC9195D72B59C1D8000EF206 /* FavoritesVC.swift in Sources */,
+				EC9195DD2B5A774A000EF206 /* LoginView.swift in Sources */,
 				EC9195C92B59BE8B000EF206 /* RegisterView.swift in Sources */,
 				EC9195D12B59C1A0000EF206 /* HomeVC.swift in Sources */,
 				EC9195CB2B59C093000EF206 /* RegisterVC.swift in Sources */,
@@ -412,7 +462,10 @@
 				EC9195C22B59B5D4000EF206 /* OnboardingViewModel.swift in Sources */,
 				EC9195A62B599056000EF206 /* CustomButton.swift in Sources */,
 				EC91959C2B59787F000EF206 /* AlertContainerView.swift in Sources */,
+				EC0623E72B5AC1710004B5E4 /* ForgotPasswordView.swift in Sources */,
 				EC9195CE2B59C0F3000EF206 /* MainTabBarController.swift in Sources */,
+				EC0623F02B5AC5550004B5E4 /* FontSize.swift in Sources */,
+				EC9195DF2B5A774E000EF206 /* LoginVC.swift in Sources */,
 				EC9195992B59762E000EF206 /* SecondaryTitleLabel.swift in Sources */,
 				EC9195C42B59B61E000EF206 /* Color+Ext.swift in Sources */,
 				EC9195722B594F2D000EF206 /* SceneDelegate.swift in Sources */,
@@ -642,8 +695,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
-				kind = exactVersion;
-				version = 10.16.0;
+				kind = upToNextMinorVersion;
+				minimumVersion = 10.17.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

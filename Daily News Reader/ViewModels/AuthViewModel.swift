@@ -5,8 +5,9 @@
 //  Created by Enes Sancar on 18.01.2024.
 //
 
-import FirebaseFirestore
+
 import FirebaseAuth
+import FirebaseFirestore
 
 final class AuthViewModel {
     

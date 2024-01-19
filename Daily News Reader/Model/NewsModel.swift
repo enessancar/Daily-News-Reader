@@ -8,10 +8,10 @@
 import Foundation
 
 struct NewsModel: Decodable {
-    let articles: [Articles]
+    let articles: [News]
 }
 
-struct Articles: Decodable {
+struct News: Decodable {
     let title: String?
     let description: String?
     let urlToImage: String?

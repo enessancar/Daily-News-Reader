@@ -9,21 +9,62 @@
 /* Begin PBXBuildFile section */
 		EC9195702B594F2D000EF206 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC91956F2B594F2D000EF206 /* AppDelegate.swift */; };
 		EC9195722B594F2D000EF206 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9195712B594F2D000EF206 /* SceneDelegate.swift */; };
-		EC9195742B594F2D000EF206 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9195732B594F2D000EF206 /* ViewController.swift */; };
-		EC9195772B594F2D000EF206 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC9195752B594F2D000EF206 /* Main.storyboard */; };
 		EC9195792B594F2F000EF206 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC9195782B594F2F000EF206 /* Assets.xcassets */; };
 		EC91957C2B594F2F000EF206 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC91957A2B594F2F000EF206 /* LaunchScreen.storyboard */; };
+		EC9195872B595F60000EF206 /* a3.json in Resources */ = {isa = PBXBuildFile; fileRef = EC9195862B595F60000EF206 /* a3.json */; };
+		EC9195892B595F67000EF206 /* a1.json in Resources */ = {isa = PBXBuildFile; fileRef = EC9195882B595F67000EF206 /* a1.json */; };
+		EC91958B2B595F6F000EF206 /* a2.json in Resources */ = {isa = PBXBuildFile; fileRef = EC91958A2B595F6F000EF206 /* a2.json */; };
+		EC91958F2B5972E4000EF206 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC91958E2B5972E4000EF206 /* NewsModel.swift */; };
+		EC9195912B59734B000EF206 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9195902B59734B000EF206 /* OnboardingModel.swift */; };
+		EC9195952B59759E000EF206 /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9195942B59759E000EF206 /* TitleLabel.swift */; };
+		EC9195972B5975E6000EF206 /* BodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9195962B5975E6000EF206 /* BodyLabel.swift */; };
+		EC9195992B59762E000EF206 /* SecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9195982B59762E000EF206 /* SecondaryTitleLabel.swift */; };
+		EC91959C2B59787F000EF206 /* AlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC91959B2B59787F000EF206 /* AlertContainerView.swift */; };
+		EC91959F2B5978C1000EF206 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EC91959E2B5978C1000EF206 /* SnapKit */; };
+		EC9195A12B5978C1000EF206 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = EC9195A02B5978C1000EF206 /* SnapKit-Dynamic */; };
+		EC9195A32B5978CB000EF206 /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9195A22B5978CB000EF206 /* AlertVC.swift */; };
+		EC9195A62B599056000EF206 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9195A52B599056000EF206 /* CustomButton.swift */; };
+		EC9195A92B5992C3000EF206 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9195A82B5992C3000EF206 /* String+Ext.swift */; };
+		EC9195AB2B5992E9000EF206 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9195AA2B5992E9000EF206 /* CustomError.swift */; };
+		EC9195AD2B59931C000EF206 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9195AC2B59931C000EF206 /* UIViewController+Ext.swift */; };
+		EC9195AF2B5993A9000EF206 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9195AE2B5993A9000EF206 /* UIView+Ext.swift */; };
+		EC9195B22B599712000EF206 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9195B12B599712000EF206 /* CustomTextField.swift */; };
+		EC9195B52B59AC67000EF206 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9195B42B59AC67000EF206 /* AuthViewModel.swift */; };
+		EC9195B82B59ADB1000EF206 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = EC9195B72B59ADB1000EF206 /* FirebaseAnalytics */; };
+		EC9195BA2B59ADB1000EF206 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = EC9195B92B59ADB1000EF206 /* FirebaseAnalyticsOnDeviceConversion */; };
+		EC9195BC2B59ADB1000EF206 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EC9195BB2B59ADB1000EF206 /* FirebaseAnalyticsSwift */; };
+		EC9195BE2B59ADB1000EF206 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = EC9195BD2B59ADB1000EF206 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		EC9195C02B59ADB1000EF206 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = EC9195BF2B59ADB1000EF206 /* FirebaseAppCheck */; };
+		EC9195C22B59B5D4000EF206 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9195C12B59B5D4000EF206 /* OnboardingViewModel.swift */; };
+		EC9195C42B59B61E000EF206 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9195C32B59B61E000EF206 /* Color+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EC91956C2B594F2D000EF206 /* Daily News Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily News Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC91956F2B594F2D000EF206 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC9195712B594F2D000EF206 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EC9195732B594F2D000EF206 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EC9195762B594F2D000EF206 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC9195782B594F2F000EF206 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC91957B2B594F2F000EF206 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC91957D2B594F2F000EF206 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC9195862B595F60000EF206 /* a3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = a3.json; sourceTree = "<group>"; };
+		EC9195882B595F67000EF206 /* a1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = a1.json; sourceTree = "<group>"; };
+		EC91958A2B595F6F000EF206 /* a2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = a2.json; sourceTree = "<group>"; };
+		EC91958E2B5972E4000EF206 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		EC9195902B59734B000EF206 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		EC9195942B59759E000EF206 /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
+		EC9195962B5975E6000EF206 /* BodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyLabel.swift; sourceTree = "<group>"; };
+		EC9195982B59762E000EF206 /* SecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryTitleLabel.swift; sourceTree = "<group>"; };
+		EC91959B2B59787F000EF206 /* AlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertContainerView.swift; sourceTree = "<group>"; };
+		EC9195A22B5978CB000EF206 /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
+		EC9195A52B599056000EF206 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		EC9195A82B5992C3000EF206 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		EC9195AA2B5992E9000EF206 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		EC9195AC2B59931C000EF206 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		EC9195AE2B5993A9000EF206 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		EC9195B12B599712000EF206 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		EC9195B42B59AC67000EF206 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		EC9195C12B59B5D4000EF206 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		EC9195C32B59B61E000EF206 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +72,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC91959F2B5978C1000EF206 /* SnapKit in Frameworks */,
+				EC9195BE2B59ADB1000EF206 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				EC9195A12B5978C1000EF206 /* SnapKit-Dynamic in Frameworks */,
+				EC9195B82B59ADB1000EF206 /* FirebaseAnalytics in Frameworks */,
+				EC9195C02B59ADB1000EF206 /* FirebaseAppCheck in Frameworks */,
+				EC9195BA2B59ADB1000EF206 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				EC9195BC2B59ADB1000EF206 /* FirebaseAnalyticsSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +104,144 @@
 		EC91956E2B594F2D000EF206 /* Daily News Reader */ = {
 			isa = PBXGroup;
 			children = (
+				EC9195C52B59B6D7000EF206 /* Support */,
+				EC9195B32B59AC54000EF206 /* ViewModels */,
+				EC9195A72B5992AA000EF206 /* Extensions */,
+				EC9195922B597587000EF206 /* CustomComponents */,
+				EC91958D2B59729C000EF206 /* Model */,
+				EC9195832B595F44000EF206 /* Screens */,
+			);
+			path = "Daily News Reader";
+			sourceTree = "<group>";
+		};
+		EC9195832B595F44000EF206 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				EC9195C62B59BD13000EF206 /* Auth */,
+				EC9195842B595F4C000EF206 /* Onboarding */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		EC9195842B595F4C000EF206 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EC9195852B595F56000EF206 /* Lottie */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		EC9195852B595F56000EF206 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				EC9195882B595F67000EF206 /* a1.json */,
+				EC91958A2B595F6F000EF206 /* a2.json */,
+				EC9195862B595F60000EF206 /* a3.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		EC91958D2B59729C000EF206 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC91958E2B5972E4000EF206 /* NewsModel.swift */,
+				EC9195902B59734B000EF206 /* OnboardingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC9195922B597587000EF206 /* CustomComponents */ = {
+			isa = PBXGroup;
+			children = (
+				EC9195B02B599705000EF206 /* TextFields */,
+				EC9195A42B59904C000EF206 /* Button */,
+				EC91959A2B597875000EF206 /* Alert */,
+				EC9195932B59758F000EF206 /* Labels */,
+			);
+			path = CustomComponents;
+			sourceTree = "<group>";
+		};
+		EC9195932B59758F000EF206 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				EC9195942B59759E000EF206 /* TitleLabel.swift */,
+				EC9195962B5975E6000EF206 /* BodyLabel.swift */,
+				EC9195982B59762E000EF206 /* SecondaryTitleLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		EC91959A2B597875000EF206 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				EC91959B2B59787F000EF206 /* AlertContainerView.swift */,
+				EC9195A22B5978CB000EF206 /* AlertVC.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		EC9195A42B59904C000EF206 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				EC9195A52B599056000EF206 /* CustomButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		EC9195A72B5992AA000EF206 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EC9195A82B5992C3000EF206 /* String+Ext.swift */,
+				EC9195AA2B5992E9000EF206 /* CustomError.swift */,
+				EC9195AC2B59931C000EF206 /* UIViewController+Ext.swift */,
+				EC9195AE2B5993A9000EF206 /* UIView+Ext.swift */,
+				EC9195C32B59B61E000EF206 /* Color+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EC9195B02B599705000EF206 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				EC9195B12B599712000EF206 /* CustomTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		EC9195B32B59AC54000EF206 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EC9195B42B59AC67000EF206 /* AuthViewModel.swift */,
+				EC9195C12B59B5D4000EF206 /* OnboardingViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EC9195C52B59B6D7000EF206 /* Support */ = {
+			isa = PBXGroup;
+			children = (
 				EC91956F2B594F2D000EF206 /* AppDelegate.swift */,
 				EC9195712B594F2D000EF206 /* SceneDelegate.swift */,
-				EC9195732B594F2D000EF206 /* ViewController.swift */,
-				EC9195752B594F2D000EF206 /* Main.storyboard */,
 				EC9195782B594F2F000EF206 /* Assets.xcassets */,
 				EC91957A2B594F2F000EF206 /* LaunchScreen.storyboard */,
 				EC91957D2B594F2F000EF206 /* Info.plist */,
 			);
-			path = "Daily News Reader";
+			name = Support;
+			sourceTree = "<group>";
+		};
+		EC9195C62B59BD13000EF206 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				EC9195C72B59BD1A000EF206 /* Register */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		EC9195C72B59BD1A000EF206 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +260,15 @@
 			dependencies = (
 			);
 			name = "Daily News Reader";
+			packageProductDependencies = (
+				EC91959E2B5978C1000EF206 /* SnapKit */,
+				EC9195A02B5978C1000EF206 /* SnapKit-Dynamic */,
+				EC9195B72B59ADB1000EF206 /* FirebaseAnalytics */,
+				EC9195B92B59ADB1000EF206 /* FirebaseAnalyticsOnDeviceConversion */,
+				EC9195BB2B59ADB1000EF206 /* FirebaseAnalyticsSwift */,
+				EC9195BD2B59ADB1000EF206 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				EC9195BF2B59ADB1000EF206 /* FirebaseAppCheck */,
+			);
 			productName = "Daily News Reader";
 			productReference = EC91956C2B594F2D000EF206 /* Daily News Reader.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +297,10 @@
 				Base,
 			);
 			mainGroup = EC9195632B594F2D000EF206;
+			packageReferences = (
+				EC91959D2B5978C1000EF206 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				EC9195B62B59ADB1000EF206 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = EC91956D2B594F2D000EF206 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +315,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC91958B2B595F6F000EF206 /* a2.json in Resources */,
 				EC91957C2B594F2F000EF206 /* LaunchScreen.storyboard in Resources */,
 				EC9195792B594F2F000EF206 /* Assets.xcassets in Resources */,
-				EC9195772B594F2D000EF206 /* Main.storyboard in Resources */,
+				EC9195892B595F67000EF206 /* a1.json in Resources */,
+				EC9195872B595F60000EF206 /* a3.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +330,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC9195742B594F2D000EF206 /* ViewController.swift in Sources */,
+				EC91958F2B5972E4000EF206 /* NewsModel.swift in Sources */,
+				EC9195972B5975E6000EF206 /* BodyLabel.swift in Sources */,
+				EC9195AF2B5993A9000EF206 /* UIView+Ext.swift in Sources */,
+				EC9195AD2B59931C000EF206 /* UIViewController+Ext.swift in Sources */,
+				EC9195B22B599712000EF206 /* CustomTextField.swift in Sources */,
+				EC9195AB2B5992E9000EF206 /* CustomError.swift in Sources */,
+				EC9195912B59734B000EF206 /* OnboardingModel.swift in Sources */,
+				EC9195B52B59AC67000EF206 /* AuthViewModel.swift in Sources */,
+				EC9195A32B5978CB000EF206 /* AlertVC.swift in Sources */,
+				EC9195952B59759E000EF206 /* TitleLabel.swift in Sources */,
+				EC9195A92B5992C3000EF206 /* String+Ext.swift in Sources */,
 				EC9195702B594F2D000EF206 /* AppDelegate.swift in Sources */,
+				EC9195C22B59B5D4000EF206 /* OnboardingViewModel.swift in Sources */,
+				EC9195A62B599056000EF206 /* CustomButton.swift in Sources */,
+				EC91959C2B59787F000EF206 /* AlertContainerView.swift in Sources */,
+				EC9195992B59762E000EF206 /* SecondaryTitleLabel.swift in Sources */,
+				EC9195C42B59B61E000EF206 /* Color+Ext.swift in Sources */,
 				EC9195722B594F2D000EF206 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +354,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EC9195752B594F2D000EF206 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC9195762B594F2D000EF206 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EC91957A2B594F2F000EF206 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +496,6 @@
 				INFOPLIST_FILE = "Daily News Reader/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +523,6 @@
 				INFOPLIST_FILE = "Daily News Reader/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,6 +560,63 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EC91959D2B5978C1000EF206 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.0;
+			};
+		};
+		EC9195B62B59ADB1000EF206 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.16.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC91959E2B5978C1000EF206 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC91959D2B5978C1000EF206 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		EC9195A02B5978C1000EF206 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC91959D2B5978C1000EF206 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+		EC9195B72B59ADB1000EF206 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC9195B62B59ADB1000EF206 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		EC9195B92B59ADB1000EF206 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC9195B62B59ADB1000EF206 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		EC9195BB2B59ADB1000EF206 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC9195B62B59ADB1000EF206 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		EC9195BD2B59ADB1000EF206 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC9195B62B59ADB1000EF206 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		EC9195BF2B59ADB1000EF206 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC9195B62B59ADB1000EF206 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EC9195642B594F2D000EF206 /* Project object */;
 }

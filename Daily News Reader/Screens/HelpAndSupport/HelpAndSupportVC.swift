@@ -58,6 +58,7 @@ final class HelpAndSupportVC: UIViewController, MFMailComposeViewControllerDeleg
         
         descriptionLabel.numberOfLines = 2
         descriptionLabel.textAlignment = .center
+        
         descriptionLabel.snp.makeConstraints { make in
             make.top.equalTo(headLabel.snp.bottom).offset(30)
             make.leading.equalToSuperview().offset(20)

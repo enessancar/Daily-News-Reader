@@ -44,7 +44,7 @@ final class HelpAndSupportView: UIView {
     lazy var sendImage: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(systemName: "message.badge.filled.fill")
-        imageView.tintColor = MovieColor.playButonBG
+        imageView.tintColor = .purple1
         return imageView
     }()
     

@@ -29,6 +29,16 @@
 		EC0624192B5BD0F00004B5E4 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0624182B5BD0F00004B5E4 /* ProfileViewModel.swift */; };
 		EC06241B2B5BD1330004B5E4 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = EC06241A2B5BD1330004B5E4 /* FirebaseStorage */; };
 		EC06241D2B5BD2D10004B5E4 /* WorkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC06241C2B5BD2D10004B5E4 /* WorkItem.swift */; };
+		EC06241F2B5BD4FF0004B5E4 /* SliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC06241E2B5BD4FF0004B5E4 /* SliderCollectionViewCell.swift */; };
+		EC0624222B5BD5460004B5E4 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = EC0624212B5BD5460004B5E4 /* Lottie */; };
+		EC0624242B5BD7470004B5E4 /* CustomTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0624232B5BD7470004B5E4 /* CustomTableVC.swift */; };
+		EC0624262B5BD8F90004B5E4 /* SupportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0624252B5BD8F90004B5E4 /* SupportVC.swift */; };
+		EC0624282B5BD93D0004B5E4 /* SupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0624272B5BD93D0004B5E4 /* SupportView.swift */; };
+		EC06242B2B5C19B00004B5E4 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC06242A2B5C19B00004B5E4 /* OnboardingView.swift */; };
+		EC06242D2B5C2C5B0004B5E4 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC06242C2B5C2C5B0004B5E4 /* OnboardingVC.swift */; };
+		EC06242F2B5C2CA20004B5E4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC06242E2B5C2CA20004B5E4 /* HomeViewModel.swift */; };
+		EC0624312B5C2D1E0004B5E4 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0624302B5C2D1E0004B5E4 /* SearchViewModel.swift */; };
+		EC0624332B5C2D500004B5E4 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0624322B5C2D500004B5E4 /* DetailViewModel.swift */; };
 		EC9195702B594F2D000EF206 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC91956F2B594F2D000EF206 /* AppDelegate.swift */; };
 		EC9195722B594F2D000EF206 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9195712B594F2D000EF206 /* SceneDelegate.swift */; };
 		EC9195792B594F2F000EF206 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC9195782B594F2F000EF206 /* Assets.xcassets */; };
@@ -80,6 +90,15 @@
 		EC0624162B5BBD3F0004B5E4 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
 		EC0624182B5BD0F00004B5E4 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		EC06241C2B5BD2D10004B5E4 /* WorkItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkItem.swift; sourceTree = "<group>"; };
+		EC06241E2B5BD4FF0004B5E4 /* SliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCollectionViewCell.swift; sourceTree = "<group>"; };
+		EC0624232B5BD7470004B5E4 /* CustomTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableVC.swift; sourceTree = "<group>"; };
+		EC0624252B5BD8F90004B5E4 /* SupportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportVC.swift; sourceTree = "<group>"; };
+		EC0624272B5BD93D0004B5E4 /* SupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportView.swift; sourceTree = "<group>"; };
+		EC06242A2B5C19B00004B5E4 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		EC06242C2B5C2C5B0004B5E4 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
+		EC06242E2B5C2CA20004B5E4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		EC0624302B5C2D1E0004B5E4 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		EC0624322B5C2D500004B5E4 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		EC91956C2B594F2D000EF206 /* Daily News Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily News Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC91956F2B594F2D000EF206 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC9195712B594F2D000EF206 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +146,7 @@
 				EC06241B2B5BD1330004B5E4 /* FirebaseStorage in Frameworks */,
 				EC0623F32B5AE0CD0004B5E4 /* FirebaseAnalytics in Frameworks */,
 				EC0623FB2B5AE0CD0004B5E4 /* FirebaseAppCheck in Frameworks */,
+				EC0624222B5BD5460004B5E4 /* Lottie in Frameworks */,
 				EC0624002B5AE2570004B5E4 /* FirebaseFirestore in Frameworks */,
 				EC0623F52B5AE0CD0004B5E4 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				EC0623F72B5AE0CD0004B5E4 /* FirebaseAnalyticsSwift in Frameworks */,
@@ -184,6 +204,7 @@
 			children = (
 				EC06240D2B5B1A190004B5E4 /* SettingTableViewCell.swift */,
 				EC06240F2B5B1BFB0004B5E4 /* SwitchTableViewCell.swift */,
+				EC0624232B5BD7470004B5E4 /* CustomTableVC.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -195,6 +216,15 @@
 				EC0624142B5B2C380004B5E4 /* ChangePasswordVC.swift */,
 			);
 			path = ChangePassword;
+			sourceTree = "<group>";
+		};
+		EC0624292B5BDC0F0004B5E4 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				EC0624252B5BD8F90004B5E4 /* SupportVC.swift */,
+				EC0624272B5BD93D0004B5E4 /* SupportView.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 		EC9195632B594F2D000EF206 = {
@@ -217,8 +247,8 @@
 		EC91956E2B594F2D000EF206 /* Daily News Reader */ = {
 			isa = PBXGroup;
 			children = (
-				EC0624012B5AE7DC0004B5E4 /* NetworkManager */,
 				EC9195C52B59B6D7000EF206 /* Support */,
+				EC0624012B5AE7DC0004B5E4 /* NetworkManager */,
 				EC9195B32B59AC54000EF206 /* ViewModels */,
 				EC9195A72B5992AA000EF206 /* Extensions */,
 				EC9195922B597587000EF206 /* CustomComponents */,
@@ -247,7 +277,10 @@
 		EC9195842B595F4C000EF206 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				EC06241E2B5BD4FF0004B5E4 /* SliderCollectionViewCell.swift */,
 				EC9195852B595F56000EF206 /* Lottie */,
+				EC06242A2B5C19B00004B5E4 /* OnboardingView.swift */,
+				EC06242C2B5C2C5B0004B5E4 /* OnboardingVC.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -338,6 +371,9 @@
 				EC0624162B5BBD3F0004B5E4 /* FavoritesViewModel.swift */,
 				EC0624182B5BD0F00004B5E4 /* ProfileViewModel.swift */,
 				EC06241C2B5BD2D10004B5E4 /* WorkItem.swift */,
+				EC06242E2B5C2CA20004B5E4 /* HomeViewModel.swift */,
+				EC0624302B5C2D1E0004B5E4 /* SearchViewModel.swift */,
+				EC0624322B5C2D500004B5E4 /* DetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -409,6 +445,7 @@
 		EC9195D82B59C1E8000EF206 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				EC0624292B5BDC0F0004B5E4 /* Support */,
 				EC9195D92B59C208000EF206 /* ProfileVC.swift */,
 			);
 			path = Profile;
@@ -451,6 +488,7 @@
 				EC0623FD2B5AE24B0004B5E4 /* FirebaseAuth */,
 				EC0623FF2B5AE2570004B5E4 /* FirebaseFirestore */,
 				EC06241A2B5BD1330004B5E4 /* FirebaseStorage */,
+				EC0624212B5BD5460004B5E4 /* Lottie */,
 			);
 			productName = "Daily News Reader";
 			productReference = EC91956C2B594F2D000EF206 /* Daily News Reader.app */;
@@ -483,6 +521,7 @@
 			packageReferences = (
 				EC91959D2B5978C1000EF206 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				EC0623F12B5AE0CD0004B5E4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				EC0624202B5BD5460004B5E4 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = EC91956D2B594F2D000EF206 /* Products */;
 			projectDirPath = "";
@@ -519,30 +558,38 @@
 				EC0623E92B5AC2810004B5E4 /* ForgotPasswordVC.swift in Sources */,
 				EC0623EE2B5AC4DA0004B5E4 /* HelpAndSupportView.swift in Sources */,
 				EC9195AF2B5993A9000EF206 /* UIView+Ext.swift in Sources */,
+				EC06242D2B5C2C5B0004B5E4 /* OnboardingVC.swift in Sources */,
 				EC06241D2B5BD2D10004B5E4 /* WorkItem.swift in Sources */,
 				EC0624102B5B1BFB0004B5E4 /* SwitchTableViewCell.swift in Sources */,
 				EC9195AD2B59931C000EF206 /* UIViewController+Ext.swift in Sources */,
 				EC9195B22B599712000EF206 /* CustomTextField.swift in Sources */,
 				EC9195DA2B59C208000EF206 /* ProfileVC.swift in Sources */,
 				EC0623EC2B5AC4D20004B5E4 /* HelpAndSupportVC.swift in Sources */,
+				EC0624332B5C2D500004B5E4 /* DetailViewModel.swift in Sources */,
 				EC9195AB2B5992E9000EF206 /* CustomError.swift in Sources */,
 				EC0624172B5BBD3F0004B5E4 /* FavoritesViewModel.swift in Sources */,
 				EC06240A2B5AEA120004B5E4 /* NetworkManager.swift in Sources */,
+				EC0624282B5BD93D0004B5E4 /* SupportView.swift in Sources */,
 				EC9195912B59734B000EF206 /* OnboardingModel.swift in Sources */,
 				EC9195B52B59AC67000EF206 /* AuthViewModel.swift in Sources */,
+				EC06242F2B5C2CA20004B5E4 /* HomeViewModel.swift in Sources */,
 				EC9195D72B59C1D8000EF206 /* FavoritesVC.swift in Sources */,
 				EC9195DD2B5A774A000EF206 /* LoginView.swift in Sources */,
 				EC9195C92B59BE8B000EF206 /* RegisterView.swift in Sources */,
+				EC06242B2B5C19B00004B5E4 /* OnboardingView.swift in Sources */,
 				EC06240E2B5B1A190004B5E4 /* SettingTableViewCell.swift in Sources */,
 				EC0624152B5B2C380004B5E4 /* ChangePasswordVC.swift in Sources */,
+				EC06241F2B5BD4FF0004B5E4 /* SliderCollectionViewCell.swift in Sources */,
 				EC9195D12B59C1A0000EF206 /* HomeVC.swift in Sources */,
 				EC9195CB2B59C093000EF206 /* RegisterVC.swift in Sources */,
 				EC9195A32B5978CB000EF206 /* AlertVC.swift in Sources */,
 				EC9195952B59759E000EF206 /* TitleLabel.swift in Sources */,
 				EC9195A92B5992C3000EF206 /* String+Ext.swift in Sources */,
+				EC0624262B5BD8F90004B5E4 /* SupportVC.swift in Sources */,
 				EC9195702B594F2D000EF206 /* AppDelegate.swift in Sources */,
 				EC9195D42B59C1BE000EF206 /* SearchVC.swift in Sources */,
 				EC9195C22B59B5D4000EF206 /* OnboardingViewModel.swift in Sources */,
+				EC0624312B5C2D1E0004B5E4 /* SearchViewModel.swift in Sources */,
 				EC9195A62B599056000EF206 /* CustomButton.swift in Sources */,
 				EC0624192B5BD0F00004B5E4 /* ProfileViewModel.swift in Sources */,
 				EC91959C2B59787F000EF206 /* AlertContainerView.swift in Sources */,
@@ -554,6 +601,7 @@
 				EC9195C42B59B61E000EF206 /* Color+Ext.swift in Sources */,
 				EC0624052B5AE7F70004B5E4 /* Endpoint.swift in Sources */,
 				EC9195722B594F2D000EF206 /* SceneDelegate.swift in Sources */,
+				EC0624242B5BD7470004B5E4 /* CustomTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -782,6 +830,14 @@
 				version = 10.17.0;
 			};
 		};
+		EC0624202B5BD5460004B5E4 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.4;
+			};
+		};
 		EC91959D2B5978C1000EF206 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -832,6 +888,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EC0623F12B5AE0CD0004B5E4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		EC0624212B5BD5460004B5E4 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC0624202B5BD5460004B5E4 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 		EC91959E2B5978C1000EF206 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;

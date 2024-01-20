@@ -12,7 +12,7 @@ extension UIColor {
     static let purple2 = UIColor(red: 0.69, green: 0.51, blue: 0.99, alpha: 1.00)
     static let purple3  = UIColor(red: 0.88, green: 0.81, blue: 1.00, alpha: 1.00)
     
-    static let goldTexxtColor = UIColor(red: 1.00, green: 0.82, blue: 0.24, alpha: 1.00)
+    static let goldTextColor = UIColor(red: 1.00, green: 0.82, blue: 0.24, alpha: 1.00)
     
     static let black  = UIColor(red: 0, green: 0, blue: 0, alpha: 1.00)
     

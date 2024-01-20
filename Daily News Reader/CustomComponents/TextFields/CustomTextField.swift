@@ -55,7 +55,8 @@ final class CustomTextField: UITextField {
             
             rightButton.setImage(UIImage(systemName: "eye.slash.fill") , for: .normal)
             rightButton.addTarget(self, action: #selector(toggleShowHide), for: .touchUpInside)
-            rightButton.configuration?.imagePadding = 16
+            rightButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: -16, bottom: 0, right: 0)
+            
             rightButton.frame = .init(x: 0, y: 0, width: 30, height: 30)
             
             rightViewMode = .always

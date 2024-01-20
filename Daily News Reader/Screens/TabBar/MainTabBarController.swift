@@ -48,7 +48,7 @@ final class MainTabBarController: UITabBarController {
         viewController.view.backgroundColor = .systemBackground
         navController.tabBarItem.title = title
         navController.tabBarItem.image = UIImage(systemName: imageName)
-        navController.tabBarItem.selectedImage = UIImage(systemName: selectedImage)
+        navController.tabBarItem.selectedImage = UIImage(systemName: selectedImage!)
         return navController
     }
 }

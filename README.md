@@ -18,6 +18,8 @@
 *Lottie  <img width="1138" alt="Ekran Resmi 2024-01-21 13 49 48" src="https://github.com/enessancar/Daily-News-Reader/assets/79282025/cf1516b5-3f43-4e85-bd93-5ed9a284bb80">
 <img width="1076" alt="Ekran Resmi 2024-01-21 13 49 35" src="https://github.com/enessancar/Daily-News-Reader/assets/79282025/e37fb1bb-03b7-46f2-9765-f51f5ae243c6">
 <img width="294" alt="Ekran Resmi 2024-01-21 13 52 30" src="https://github.com/enessancar/Daily-News-Reader/assets/79282025/8a4bbc1d-4ad3-4a9b-8122-bba580578cbc">
-<img width="309" alt="Ekran Resmi 2024-01-21 13 51 33" src="https://github.com/en[Simulator Screen Recording - iPhone SE (3rd generation) - 2024-01-21 at 13.48.26.mov.zip](https://github.com/enessancar/Daily-News-Reader/files/14000976/Simulator.Screen.Recording.-.iPhone.SE.3rd.generation.-.2024-01-21.at.13.48.26.mov.zip)
-essancar/Daily-News-Reader/assets/79282025/3b7626a8-5f30-4b43-a942-5ffd6aebb9f2">
 <img width="308" alt="Ekran Resmi 2024-01-21 13 51 24" src="https://github.com/enessancar/Daily-News-Reader/assets/79282025/8ead24f4-f928-41f2-8c6e-8994c73bfd14">
+
+
+https://github.com/enessancar/Daily-News-Reader/assets/79282025/c06ab310-3855-4c1e-8972-8dfeecf90b4f
+

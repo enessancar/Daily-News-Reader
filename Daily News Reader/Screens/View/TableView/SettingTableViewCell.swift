@@ -27,48 +27,46 @@ final class SettingTableViewCell: UITableViewCell {
         return imageView
     }()
     
-    private lazy var label: UILabel = {
+    private let label: UILabel = {
         let label = UILabel()
         label.numberOfLines = 1
         return label
     }()
     
+    //MARK: - Init
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        contentView.addSubview(label)
         contentView.addSubview(iconContainer)
         iconContainer.addSubview(iconImageView)
+        contentView.addSubview(label)
         
         contentView.clipsToBounds = true
         accessoryType = .disclosureIndicator
-        
         configureUI()
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError()
     }
     
     private func configureUI() {
         let size: CGFloat = contentView.frame.size.height - 12
-        let imageSize: CGFloat = size/1.5
+        let imageSize: CGFloat = size / 1.5
         
         iconContainer.snp.makeConstraints { make in
-            make.leading.equalToSuperview().offset(15)
-            make.top.bottom.equalToSuperview()
+            make.leading.equalToSuperview().offset(16)
             make.width.height.equalTo(size)
             make.centerY.equalToSuperview()
         }
         
         iconImageView.snp.makeConstraints { make in
-            make.center.equalToSuperview()
             make.width.height.equalTo(imageSize)
+            make.center.equalToSuperview()
         }
         
         label.snp.makeConstraints { make in
             make.leading.equalTo(iconContainer.snp.trailing).offset(20)
-            make.top.bottom.trailing.equalToSuperview()
             make.centerY.equalToSuperview()
         }
     }
@@ -80,7 +78,7 @@ final class SettingTableViewCell: UITableViewCell {
         iconContainer.backgroundColor = nil
     }
     
-    public func configure(with model: SettingsOption) {
+    func configure(with model: SettingsOption) {
         label.text = model.title
         iconImageView.image = model.icon
         iconContainer.backgroundColor = model.iconBackgrondColor

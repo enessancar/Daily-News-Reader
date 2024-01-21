@@ -132,7 +132,7 @@ final class SwitchTableViewCell: UITableViewCell {
         mySwitch.isOn = false
     }
     
-    public func configure(with model: SettingsSwitchOption) {
+    public func configure(with model: SettingsSwitchOption){
         label.text = model.title
         iconImageView.image = model.icon
         iconContainer.backgroundColor = model.iconBackgrondColor

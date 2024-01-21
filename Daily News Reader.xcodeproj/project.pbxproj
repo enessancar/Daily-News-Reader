@@ -34,11 +34,17 @@
 		EC0624242B5BD7470004B5E4 /* CustomTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0624232B5BD7470004B5E4 /* CustomTableVC.swift */; };
 		EC0624262B5BD8F90004B5E4 /* SupportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0624252B5BD8F90004B5E4 /* SupportVC.swift */; };
 		EC0624282B5BD93D0004B5E4 /* SupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0624272B5BD93D0004B5E4 /* SupportView.swift */; };
-		EC06242B2B5C19B00004B5E4 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC06242A2B5C19B00004B5E4 /* OnboardingView.swift */; };
 		EC06242D2B5C2C5B0004B5E4 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC06242C2B5C2C5B0004B5E4 /* OnboardingVC.swift */; };
 		EC06242F2B5C2CA20004B5E4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC06242E2B5C2CA20004B5E4 /* HomeViewModel.swift */; };
 		EC0624312B5C2D1E0004B5E4 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0624302B5C2D1E0004B5E4 /* SearchViewModel.swift */; };
 		EC0624332B5C2D500004B5E4 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0624322B5C2D500004B5E4 /* DetailViewModel.swift */; };
+		EC0624352B5C300C0004B5E4 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0624342B5C300C0004B5E4 /* HomeTableViewCell.swift */; };
+		EC0624372B5C32360004B5E4 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0624362B5C32360004B5E4 /* Date+Ext.swift */; };
+		EC06243A2B5C38160004B5E4 /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0624392B5C38160004B5E4 /* NewsCollectionViewCell.swift */; };
+		EC06243C2B5C50430004B5E4 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC06243B2B5C50430004B5E4 /* NewsView.swift */; };
+		EC06243F2B5C55EF0004B5E4 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EC06243E2B5C55EF0004B5E4 /* Kingfisher */; };
+		EC0624412B5C5B3C0004B5E4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC0624402B5C5B3C0004B5E4 /* GoogleService-Info.plist */; };
+		EC0624432B5C65490004B5E4 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0624422B5C65490004B5E4 /* DetailVC.swift */; };
 		EC9195702B594F2D000EF206 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC91956F2B594F2D000EF206 /* AppDelegate.swift */; };
 		EC9195722B594F2D000EF206 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9195712B594F2D000EF206 /* SceneDelegate.swift */; };
 		EC9195792B594F2F000EF206 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC9195782B594F2F000EF206 /* Assets.xcassets */; };
@@ -94,11 +100,16 @@
 		EC0624232B5BD7470004B5E4 /* CustomTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableVC.swift; sourceTree = "<group>"; };
 		EC0624252B5BD8F90004B5E4 /* SupportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportVC.swift; sourceTree = "<group>"; };
 		EC0624272B5BD93D0004B5E4 /* SupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportView.swift; sourceTree = "<group>"; };
-		EC06242A2B5C19B00004B5E4 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		EC06242C2B5C2C5B0004B5E4 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		EC06242E2B5C2CA20004B5E4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		EC0624302B5C2D1E0004B5E4 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		EC0624322B5C2D500004B5E4 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		EC0624342B5C300C0004B5E4 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		EC0624362B5C32360004B5E4 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		EC0624392B5C38160004B5E4 /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCell.swift; sourceTree = "<group>"; };
+		EC06243B2B5C50430004B5E4 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		EC0624402B5C5B3C0004B5E4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EC0624422B5C65490004B5E4 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		EC91956C2B594F2D000EF206 /* Daily News Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily News Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC91956F2B594F2D000EF206 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC9195712B594F2D000EF206 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +151,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC06243F2B5C55EF0004B5E4 /* Kingfisher in Frameworks */,
 				EC91959F2B5978C1000EF206 /* SnapKit in Frameworks */,
 				EC0623F92B5AE0CD0004B5E4 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				EC9195A12B5978C1000EF206 /* SnapKit-Dynamic in Frameworks */,
@@ -227,6 +239,15 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
+		EC0624382B5C380A0004B5E4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EC0624392B5C38160004B5E4 /* NewsCollectionViewCell.swift */,
+				EC06243B2B5C50430004B5E4 /* NewsView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		EC9195632B594F2D000EF206 = {
 			isa = PBXGroup;
 			children = (
@@ -279,7 +300,6 @@
 			children = (
 				EC06241E2B5BD4FF0004B5E4 /* SliderCollectionViewCell.swift */,
 				EC9195852B595F56000EF206 /* Lottie */,
-				EC06242A2B5C19B00004B5E4 /* OnboardingView.swift */,
 				EC06242C2B5C2C5B0004B5E4 /* OnboardingVC.swift */,
 			);
 			path = Onboarding;
@@ -351,6 +371,7 @@
 				EC9195AE2B5993A9000EF206 /* UIView+Ext.swift */,
 				EC9195C32B59B61E000EF206 /* Color+Ext.swift */,
 				EC0623EF2B5AC5550004B5E4 /* FontSize.swift */,
+				EC0624362B5C32360004B5E4 /* Date+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -386,6 +407,7 @@
 				EC9195782B594F2F000EF206 /* Assets.xcassets */,
 				EC91957A2B594F2F000EF206 /* LaunchScreen.storyboard */,
 				EC91957D2B594F2F000EF206 /* Info.plist */,
+				EC0624402B5C5B3C0004B5E4 /* GoogleService-Info.plist */,
 			);
 			name = Support;
 			sourceTree = "<group>";
@@ -421,7 +443,10 @@
 		EC9195CF2B59C199000EF206 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				EC0624382B5C380A0004B5E4 /* Cell */,
 				EC9195D02B59C1A0000EF206 /* HomeVC.swift */,
+				EC0624342B5C300C0004B5E4 /* HomeTableViewCell.swift */,
+				EC0624422B5C65490004B5E4 /* DetailVC.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -489,6 +514,7 @@
 				EC0623FF2B5AE2570004B5E4 /* FirebaseFirestore */,
 				EC06241A2B5BD1330004B5E4 /* FirebaseStorage */,
 				EC0624212B5BD5460004B5E4 /* Lottie */,
+				EC06243E2B5C55EF0004B5E4 /* Kingfisher */,
 			);
 			productName = "Daily News Reader";
 			productReference = EC91956C2B594F2D000EF206 /* Daily News Reader.app */;
@@ -522,6 +548,7 @@
 				EC91959D2B5978C1000EF206 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				EC0623F12B5AE0CD0004B5E4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				EC0624202B5BD5460004B5E4 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				EC06243D2B5C55EF0004B5E4 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = EC91956D2B594F2D000EF206 /* Products */;
 			projectDirPath = "";
@@ -538,6 +565,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC91958B2B595F6F000EF206 /* a2.json in Resources */,
+				EC0624412B5C5B3C0004B5E4 /* GoogleService-Info.plist in Resources */,
 				EC91957C2B594F2F000EF206 /* LaunchScreen.storyboard in Resources */,
 				EC9195792B594F2F000EF206 /* Assets.xcassets in Resources */,
 				EC9195892B595F67000EF206 /* a1.json in Resources */,
@@ -567,22 +595,26 @@
 				EC0623EC2B5AC4D20004B5E4 /* HelpAndSupportVC.swift in Sources */,
 				EC0624332B5C2D500004B5E4 /* DetailViewModel.swift in Sources */,
 				EC9195AB2B5992E9000EF206 /* CustomError.swift in Sources */,
+				EC0624372B5C32360004B5E4 /* Date+Ext.swift in Sources */,
+				EC0624352B5C300C0004B5E4 /* HomeTableViewCell.swift in Sources */,
 				EC0624172B5BBD3F0004B5E4 /* FavoritesViewModel.swift in Sources */,
 				EC06240A2B5AEA120004B5E4 /* NetworkManager.swift in Sources */,
 				EC0624282B5BD93D0004B5E4 /* SupportView.swift in Sources */,
 				EC9195912B59734B000EF206 /* OnboardingModel.swift in Sources */,
+				EC06243C2B5C50430004B5E4 /* NewsView.swift in Sources */,
 				EC9195B52B59AC67000EF206 /* AuthViewModel.swift in Sources */,
 				EC06242F2B5C2CA20004B5E4 /* HomeViewModel.swift in Sources */,
 				EC9195D72B59C1D8000EF206 /* FavoritesVC.swift in Sources */,
 				EC9195DD2B5A774A000EF206 /* LoginView.swift in Sources */,
 				EC9195C92B59BE8B000EF206 /* RegisterView.swift in Sources */,
-				EC06242B2B5C19B00004B5E4 /* OnboardingView.swift in Sources */,
 				EC06240E2B5B1A190004B5E4 /* SettingTableViewCell.swift in Sources */,
 				EC0624152B5B2C380004B5E4 /* ChangePasswordVC.swift in Sources */,
 				EC06241F2B5BD4FF0004B5E4 /* SliderCollectionViewCell.swift in Sources */,
 				EC9195D12B59C1A0000EF206 /* HomeVC.swift in Sources */,
+				EC06243A2B5C38160004B5E4 /* NewsCollectionViewCell.swift in Sources */,
 				EC9195CB2B59C093000EF206 /* RegisterVC.swift in Sources */,
 				EC9195A32B5978CB000EF206 /* AlertVC.swift in Sources */,
+				EC0624432B5C65490004B5E4 /* DetailVC.swift in Sources */,
 				EC9195952B59759E000EF206 /* TitleLabel.swift in Sources */,
 				EC9195A92B5992C3000EF206 /* String+Ext.swift in Sources */,
 				EC0624262B5BD8F90004B5E4 /* SupportVC.swift in Sources */,
@@ -838,6 +870,14 @@
 				minimumVersion = 4.3.4;
 			};
 		};
+		EC06243D2B5C55EF0004B5E4 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.2;
+			};
+		};
 		EC91959D2B5978C1000EF206 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -893,6 +933,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EC0624202B5BD5460004B5E4 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
+		};
+		EC06243E2B5C55EF0004B5E4 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC06243D2B5C55EF0004B5E4 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 		EC91959E2B5978C1000EF206 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;

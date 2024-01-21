@@ -24,7 +24,7 @@ class SearchVM :ISearchViewModel {
     func setDelegate(output: SearchOutPut){
         searchOutPut = output
     }
-
+    
     // MARK: - Get Top Headlines
     func getNewsTopHeadLines() {
         Task{
@@ -32,8 +32,8 @@ class SearchVM :ISearchViewModel {
                 let response = try await NetworkManager.shared.getNews()
                 self.searchOutPut?.saveDatas(value: response)
             } catch {
-                if let newsError = error as? NewsError {
-                    print("Error Veri Çekerken" + newsError.rawValue)
+                if let newsError = error as? CustomError {
+                    print("Error fetch" + newsError.rawValue)
                 }else {
                     print(error.localizedDescription)
                 }
@@ -48,9 +48,9 @@ class SearchVM :ISearchViewModel {
                 let response = try await NetworkManager.shared.getNewsSearch(search: searchTextt)
                 self.searchOutPut?.saveDatas(value: response)
             } catch {
-                if let newsError = error as? NewsError {
-                    print("Error Veri Çekerken" + newsError.rawValue)
-                }else {
+                if let newsError = error as? CustomError {
+                    print("Error fetch" + newsError.rawValue)
+                } else {
                     print(error.localizedDescription)
                 }
             }

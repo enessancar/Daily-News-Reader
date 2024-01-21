@@ -28,15 +28,18 @@ final class MainTabBarController: UITabBarController {
             
             createNavController(for: SearchVC(),
                                 title: "Search",
-                                imageName: "magnifyingglass"),
+                                imageName: "magnifyingglass",
+                                selectedImage: "magnifyingglass"),
             
             createNavController(for: FavoritesVC(),
                                 title: "Favorites",
-                                imageName: "bookmark"),
+                                imageName: "bookmark",
+                                selectedImage: "bookmark"),
             
             createNavController(for: ProfileVC(),
                                 title: "Profile",
-                                imageName: "person.crop.circle")
+                                imageName: "person.crop.circle",
+                                selectedImage: "person.crop.circle")
         ]
     }
     

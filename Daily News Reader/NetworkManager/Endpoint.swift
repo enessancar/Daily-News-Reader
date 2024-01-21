@@ -11,7 +11,7 @@ struct Constants {
     private init() {}
     
     static let baseURL = "https://newsapi.org/v2/"
-    static let apiKey  = "b32b03ad3247476aaffaf286683e3bd0"
+    static let apiKey  = "&apiKey=774527d9f9134f4fbb4032bec7f77007"
 }
 
 struct Endpoint {

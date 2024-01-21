@@ -7,21 +7,19 @@
 
 import Foundation
 
-struct NewsModel: Decodable {
+struct NewsModel: Codable {
     let articles: [News]
 }
 
-struct News: Decodable {
+struct News: Codable {
+    let source: Source?
+    let author: String?
     let title: String?
     let description: String?
-    let urlToImage: String?
-    let publishedAt: String?
-    let source: Source?
     let url: String?
-    
-    var _url: String {
-        url ?? "N/A"
-    }
+    let urlToImage: String?
+    let publishedAt: Date?
+    let content: String?  
     
     var _title: String {
         title ?? "N/A"
@@ -35,15 +33,12 @@ struct News: Decodable {
         urlToImage ?? "N/A"
     }
     
-    var _publishedAt: String {
-        publishedAt ?? "N/A"
+    var _publishedAt: Date {
+        publishedAt ?? .now
     }
 }
 
-struct Source: Decodable {
+struct Source: Codable {
+    let id: String?
     let name: String?
-    
-    var _name: String {
-        name ?? "N/A"
-    }
 }

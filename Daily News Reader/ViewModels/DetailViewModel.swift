@@ -10,8 +10,7 @@ import FirebaseFirestore
 import FirebaseAuth
 
 final class DetailViewModel {
-    
-    let currentUserID = Auth.auth().currentUser?.uid
+    let currentUserID = Auth.auth().currentUser!.uid
     
     func addToFavorites(news: News, completion: @escaping (Bool) -> Void) {
         
@@ -23,59 +22,52 @@ final class DetailViewModel {
             "publishedAt" : news.publishedAt!,
         ] as [String : Any]
         
-        if let currentUserID {
-            Firestore.firestore()
-                .collection("UsersInfo")
-                .document(currentUserID)
-                .collection("favorites")
-                .document(news.url!.hash.description)
-                .setData(data) { error in
-                    if let error = error {
-                        print(error.localizedDescription)
-                    }
-                    self.isFavorited(news: news) { bool in
-                        completion(bool)
-                    }
+        Firestore.firestore()
+            .collection("UsersInfo")
+            .document(currentUserID)
+            .collection("favorites")
+            .document(news.url!.hash.description)
+            .setData(data) { error in
+                if let error = error {
+                    print(error.localizedDescription)
                 }
-        }
+                self.isFavorited(news: news) { bool in
+                    completion(bool)
+                }
+            }
     }
     
     func removeFromFavorites(news: News, completion: @escaping (Bool) -> Void) {
-        if let currentUserID {
-            Firestore.firestore()
-                .collection("UsersInfo")
-                .document(currentUserID)
-                .collection("favorites")
-                .document(news.url!.hash.description)
-                .delete { error in
-                    if let error = error {
-                        print(error.localizedDescription)
-                    }
-                    self.isFavorited(news: news) { bool in
-                        completion(bool)
-                    }
+        Firestore.firestore()
+            .collection("UsersInfo")
+            .document(currentUserID)
+            .collection("favorites")
+            .document(news.url!.hash.description)
+            .delete { error in
+                if let error = error {
+                    print(error.localizedDescription)
                 }
-        }
+                self.isFavorited(news: news) { bool in
+                    completion(bool)
+                }
+            }
     }
     
     func isFavorited(news: News, completion: @escaping (Bool) -> Void) {
-        if let currentUserID {
-            Firestore.firestore()
-                .collection("UsersInfo")
-                .document(currentUserID)
-                .collection("favorites")
-                .document(news.url!.hash.description)
-                .getDocument { snapshot, error in
-                    if let error = error {
-                        print(error.localizedDescription)
-                        return
-                    }
-                    
-                    if let snapshot = snapshot {
-                        completion(snapshot.exists)
-                    }
+        Firestore.firestore()
+            .collection("UsersInfo")
+            .document(currentUserID)
+            .collection("favorites")
+            .document(news.url!.hash.description)
+            .getDocument { snapshot, error in
+                if let error = error {
+                    print(error.localizedDescription)
+                    return
                 }
-        }
+                
+                if let snapshot = snapshot {
+                    completion(snapshot.exists)
+                }
+            }
     }
 }
-

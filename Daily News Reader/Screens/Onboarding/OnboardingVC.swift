@@ -10,54 +10,200 @@ import SnapKit
 
 final class OnboardingVC: UIViewController {
     
-    private let viewModel = OnboardingViewModel()
-    private let onboardingView = OnboardingView()
+    private var viewModel = OnboardingViewModel()
+    private var sliderData: [OnboardingItemModel] = []
     
-    private var fromValue: CGFloat = 0
+    // MARK: - Views
+    lazy var collectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: view.frame.width, height: view.frame.height)
+        layout.minimumLineSpacing = .zero
+        layout.minimumInteritemSpacing = .zero
+        layout.scrollDirection = .horizontal
+        
+        let collection = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collection.dataSource = self
+        collection.delegate = self
+        collection.register(SliderCollectionViewCell.self, forCellWithReuseIdentifier: SliderCollectionViewCell.identifier)
+        collection.isPagingEnabled = true
+        return collection
+    }()
+    lazy var skipBtn: UIButton = {
+        let btn = UIButton()
+        btn.setTitle("Skip", for: .normal)
+        btn.setTitleColor(.white, for: .normal)
+        btn.titleLabel?.font = UIFont.systemFont(ofSize: 15)
+        btn.addTarget(self, action: #selector(skipButtonTapped), for: .touchUpInside)
+        return btn
+    }()
+    
+    lazy var vStack: UIStackView = {
+        let stack = UIStackView()
+        stack.axis = .vertical
+        stack.alignment = .center
+        stack.spacing = 5
+        stack.distribution = .fillEqually
+        return stack
+    }()
+    // MARK: - Shape
     private let shape = CAShapeLayer()
     private var currentPageIndex: CGFloat = 0
+    private var fromValue: CGFloat = 0
     
+    lazy var nextBtn: UIView = {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(nextSlide))
+        
+        let nextImg = UIImageView()
+        nextImg.image = UIImage(systemName: "chevron.right.circle.fill")
+        nextImg.tintColor = .white
+        nextImg.contentMode = .scaleAspectFit
+ 
+        nextImg.anchor(size: .init(width: 55, height: 55))
+        
+        let btn = UIView()
+        btn.anchor(size: .init(width: 60, height: 60))
+        btn.isUserInteractionEnabled = true
+        btn.addGestureRecognizer(tapGesture)
+        btn.addSubview(nextImg)
+        
+        nextImg.centerInSuperview()
+        return btn
+    }()
+    // MARK: - Page Control
+    private var pagers: [UIView] = []
+    private var currentSlide = 0
+    private var widthAnhor: NSLayoutConstraint?
+    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupOnboardView()
+        sliderData = viewModel.sliderData
+        setupCollection()
+        setControll()
+        setShape()
     }
     
-    private func setupOnboardView() {
-        view.addSubview(onboardingView)
-        onboardingView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
+    // MARK: - UI Setup
+    private func setShape() {
+        currentPageIndex = CGFloat(1) / CGFloat(sliderData.count) //(0.33333)
+        
+        let nextStroke = UIBezierPath(arcCenter: CGPoint(x: 30, y: 30), radius: 31, startAngle: -(.pi/2), endAngle: 5, clockwise: true)
+        
+        let trackShape = CAShapeLayer()
+        trackShape.path = nextStroke.cgPath
+        trackShape.fillColor = UIColor.clear.cgColor
+        trackShape.lineWidth = 4
+        trackShape.strokeColor = UIColor.white.cgColor
+        trackShape.opacity = 0.1
+        nextBtn.layer.addSublayer(trackShape)
+        
+        shape.path = nextStroke.cgPath
+        shape.fillColor = UIColor.clear.cgColor
+        shape.strokeColor = UIColor.white.cgColor
+        shape.lineWidth = 4
+        shape.lineCap = .round
+        shape.strokeStart = 0
+        shape.strokeEnd = 0
+        
+        nextBtn.layer.addSublayer(shape)
+    }
+    
+    private func setControll() {
+        view.addSubview(vStack)
+        view.addSubview(skipBtn)
+        
+        let pagerStack = UIStackView()
+        pagerStack.axis = .horizontal
+        pagerStack.spacing = 5
+        pagerStack.alignment = .center
+        pagerStack.distribution = .fill
+        pagerStack.translatesAutoresizingMaskIntoConstraints = false
+        
+        for tag in 1...sliderData.count{
+            let pager = UIView()
+            pager.tag = tag
+            pager.translatesAutoresizingMaskIntoConstraints = false
+            pager.backgroundColor = .white
+            pager.layer.cornerRadius = 5
+            pager.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(scrollToSlide(sender: ))))
+            self.pagers.append(pager)
+            pagerStack.addArrangedSubview(pager)
+            
         }
         
-        onboardingView.collectionView.delegate = self
-        onboardingView.collectionView.dataSource = self
+        vStack.addArrangedSubview(nextBtn)
+        vStack.addArrangedSubview(pagerStack)
         
-        onboardingView.delegate = self
+        skipBtn.anchor(top: view.safeAreaLayoutGuide.topAnchor,
+                       trailing: view.trailingAnchor,
+                       padding: .init(top: 10, left: 0, bottom: 0, right: 10)
+        )
+        
+        vStack.anchor(leading: view.leadingAnchor,
+                      bottom: view.bottomAnchor,
+                      trailing: view.trailingAnchor,
+                      padding: .init(top: 0, left: 0, bottom: 50, right: 0)
+        )
+        
     }
+    
+    private func setupCollection(){
+        view.addSubview(collectionView)
+        collectionView.anchor(top: view.topAnchor,
+                              leading: view.leadingAnchor,
+                              bottom: view.bottomAnchor,
+                              trailing: view.trailingAnchor
+        )
+    }
+    // MARK: - UI Setup
+    @objc func scrollToSlide(sender: UIGestureRecognizer){
+        if let index = sender.view?.tag{
+            collectionView.scrollToItem(at: IndexPath(item: index-1, section: 0), at: .centeredHorizontally, animated: true)
+            
+            currentSlide = index - 1
+        }
+    }
+    
+    @objc func nextSlide(){
+        let maxSlider = sliderData.count
+        if currentSlide < maxSlider-1 {
+            currentSlide += 1
+            collectionView.scrollToItem(at: IndexPath(item: currentSlide, section: 0), at: .centeredHorizontally, animated: true)
+        }
+    }
+    
+    // MARK: - Action
+    @objc func skipButtonTapped() {
+        let loginVC = LoginVC()
+        let navController = UINavigationController(rootViewController: loginVC)
+        navController.modalPresentationStyle = .fullScreen
+        self.present(navController, animated: true, completion: nil)
+        
+    }
+    
 }
 
-
-//MARK: - CollectionView
-extension OnboardingVC: UICollectionViewDataSource, UICollectionViewDelegate {
-    
+extension OnboardingVC : UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
-        onboardingView.sliderData.count
+        return sliderData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SliderCollectionViewCell.identifier, for: indexPath) as? SliderCollectionViewCell else {
-            fatalError()
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SliderCollectionViewCell.identifier, for: indexPath) as? SliderCollectionViewCell {
+            cell.contentView.backgroundColor = sliderData[indexPath.item].color
+            cell.titleLabel.text = sliderData[indexPath.item].title
+            cell.textLabel.text = sliderData[indexPath.item].text
+             
+            cell.animationSetup(name: sliderData[indexPath.item].animationName)
+            return cell
         }
-        let sliderData = onboardingView.sliderData[indexPath.item]
-        cell.updateUI(sliderData: sliderData)
-        return cell
+        return UICollectionViewCell()
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        onboardingView.currentSlide = indexPath.item
+        currentSlide = indexPath.item
         
-        onboardingView.pages.forEach { page in
+        pagers.forEach { page in
             let tag = page.tag
             
             page.constraints.forEach { conts in
@@ -68,24 +214,17 @@ extension OnboardingVC: UICollectionViewDataSource, UICollectionViewDelegate {
             
             if viewTag == tag{
                 page.layer.opacity = 1
-                page.snp.makeConstraints { make in
-                    make.width.equalTo(20)
-                }
-                
+                widthAnhor = page.widthAnchor.constraint(equalToConstant: 20)
             } else {
                 page.layer.opacity = 0.5
-                page.snp.makeConstraints { make in
-                    make.width.equalTo(10)
-                }
+                widthAnhor = page.widthAnchor.constraint(equalToConstant: 10)
             }
-            page.snp.makeConstraints { make in
-                make.height.equalTo(10)
-            }
-            
+            widthAnhor?.isActive = true
+            page.heightAnchor.constraint(equalToConstant: 10).isActive = true
             
         }
         
-        let curentIndex = onboardingView.currentPageIndex * CGFloat(indexPath.item+1)
+        let curentIndex = currentPageIndex * CGFloat(indexPath.item+1)
         
         let animation = CABasicAnimation(keyPath: "strokeEnd")
         animation.fromValue = fromValue
@@ -98,32 +237,3 @@ extension OnboardingVC: UICollectionViewDataSource, UICollectionViewDelegate {
         fromValue = curentIndex
     }
 }
-
-extension OnboardingVC: OnboardingViewDelegate {
-    func skipButtonTapped() {
-        let loginVC = LoginVC()
-        let navController = UINavigationController(rootViewController: loginVC)
-        navController.modalPresentationStyle = .fullScreen
-        present(navController, animated: true)
-    }
-    
-    func nextSlideButtonTapped() {
-        let maxSlider = onboardingView.sliderData.count
-        if onboardingView.currentSlide < maxSlider - 1 {
-            onboardingView.currentSlide += 1
-            onboardingView.collectionView.scrollToItem(
-                at: IndexPath(item: onboardingView.currentSlide,
-                              section: .zero),
-                at: .centeredHorizontally, animated: true)
-        }
-    }
-    
-    func scrollToSlideTapped(sender: UIGestureRecognizer) {
-        if let index = sender.view?.tag{
-            onboardingView.collectionView.scrollToItem(at: IndexPath(item: index-1, section: 0), at: .centeredHorizontally, animated: true)
-            
-            onboardingView.currentSlide = index - 1
-        }
-    }
-}
-

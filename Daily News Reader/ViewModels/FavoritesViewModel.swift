@@ -35,7 +35,7 @@ final class FavoritesViewModel {
                 .collection("UsersInfo")
                 .document(currentUser)
                 .collection("favorites")
-                .document(news._url.hash.description)
+                .document(news.url!.hash.description)
                 .delete { error in
                     if let error {
                         print(error.localizedDescription)

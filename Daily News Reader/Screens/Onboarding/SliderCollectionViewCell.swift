@@ -20,7 +20,7 @@ final class SliderCollectionViewCell: UICollectionViewCell {
         return lottieView
     }()
     
-    private lazy var titleLabel: UILabel = {
+    lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
         label.textColor = .goldTextColor
@@ -28,7 +28,7 @@ final class SliderCollectionViewCell: UICollectionViewCell {
         return label
     }()
     
-    private lazy var textLabel: UILabel = {
+    lazy var textLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
         label.textColor = .white

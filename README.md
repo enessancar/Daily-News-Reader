@@ -1,5 +1,6 @@
 # Daily News Reader
 Screen recording of the project is attached below
+## packages are added with SPM, when the project is cloned, it runs when you press run.
 ## Used Technologies
 
 * UIKit

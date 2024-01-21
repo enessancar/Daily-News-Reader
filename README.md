@@ -1,5 +1,5 @@
 # Daily News Reader
-
+Screen recording of the project is attached below
 ## Used Technologies
 
 * UIKit

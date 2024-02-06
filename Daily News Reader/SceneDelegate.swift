@@ -36,8 +36,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window?.rootViewController = nav
         }
         
-        
-        if let currentUser = Auth.auth().currentUser {
+        if Auth.auth().currentUser != nil {
             let tabBar = MainTabBarController()
             tabBar.modalPresentationStyle = .fullScreen
             window?.rootViewController = tabBar

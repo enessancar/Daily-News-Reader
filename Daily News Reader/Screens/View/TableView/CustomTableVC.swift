@@ -84,9 +84,10 @@ class CustomTableVC : UIViewController , UITableViewDelegate, UITableViewDataSou
                     self.navigationController?.pushViewController(vc, animated: true)
                 })),
             .staticCell(model: SettingsOption(title: "Help and Support", icon: UIImage(systemName: "questionmark.circle"), iconBackgrondColor: .purple3, handler: {
-                let vc = SupportVC()
+                let vc = HelpAndSupportVC()
                 self.navigationController?.pushViewController(vc, animated: true)
             })),
+            
             .staticCell(model: SettingsOption(title: "Log out", icon: UIImage(systemName: "rectangle.portrait.and.arrow.forward"), iconBackgrondColor: .purple3, handler: {
                 do {
                     try Auth.auth().signOut()

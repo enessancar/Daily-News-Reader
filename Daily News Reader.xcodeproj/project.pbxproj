@@ -32,8 +32,6 @@
 		EC06241F2B5BD4FF0004B5E4 /* SliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC06241E2B5BD4FF0004B5E4 /* SliderCollectionViewCell.swift */; };
 		EC0624222B5BD5460004B5E4 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = EC0624212B5BD5460004B5E4 /* Lottie */; };
 		EC0624242B5BD7470004B5E4 /* CustomTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0624232B5BD7470004B5E4 /* CustomTableVC.swift */; };
-		EC0624262B5BD8F90004B5E4 /* SupportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0624252B5BD8F90004B5E4 /* SupportVC.swift */; };
-		EC0624282B5BD93D0004B5E4 /* SupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0624272B5BD93D0004B5E4 /* SupportView.swift */; };
 		EC06242D2B5C2C5B0004B5E4 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC06242C2B5C2C5B0004B5E4 /* OnboardingVC.swift */; };
 		EC06242F2B5C2CA20004B5E4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC06242E2B5C2CA20004B5E4 /* HomeViewModel.swift */; };
 		EC0624312B5C2D1E0004B5E4 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0624302B5C2D1E0004B5E4 /* SearchViewModel.swift */; };
@@ -98,8 +96,6 @@
 		EC06241C2B5BD2D10004B5E4 /* WorkItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkItem.swift; sourceTree = "<group>"; };
 		EC06241E2B5BD4FF0004B5E4 /* SliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCollectionViewCell.swift; sourceTree = "<group>"; };
 		EC0624232B5BD7470004B5E4 /* CustomTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableVC.swift; sourceTree = "<group>"; };
-		EC0624252B5BD8F90004B5E4 /* SupportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportVC.swift; sourceTree = "<group>"; };
-		EC0624272B5BD93D0004B5E4 /* SupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportView.swift; sourceTree = "<group>"; };
 		EC06242C2B5C2C5B0004B5E4 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		EC06242E2B5C2CA20004B5E4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		EC0624302B5C2D1E0004B5E4 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
@@ -228,15 +224,6 @@
 				EC0624142B5B2C380004B5E4 /* ChangePasswordVC.swift */,
 			);
 			path = ChangePassword;
-			sourceTree = "<group>";
-		};
-		EC0624292B5BDC0F0004B5E4 /* Support */ = {
-			isa = PBXGroup;
-			children = (
-				EC0624252B5BD8F90004B5E4 /* SupportVC.swift */,
-				EC0624272B5BD93D0004B5E4 /* SupportView.swift */,
-			);
-			path = Support;
 			sourceTree = "<group>";
 		};
 		EC0624382B5C380A0004B5E4 /* Cell */ = {
@@ -470,7 +457,6 @@
 		EC9195D82B59C1E8000EF206 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				EC0624292B5BDC0F0004B5E4 /* Support */,
 				EC9195D92B59C208000EF206 /* ProfileVC.swift */,
 			);
 			path = Profile;
@@ -599,7 +585,6 @@
 				EC0624352B5C300C0004B5E4 /* HomeTableViewCell.swift in Sources */,
 				EC0624172B5BBD3F0004B5E4 /* FavoritesViewModel.swift in Sources */,
 				EC06240A2B5AEA120004B5E4 /* NetworkManager.swift in Sources */,
-				EC0624282B5BD93D0004B5E4 /* SupportView.swift in Sources */,
 				EC9195912B59734B000EF206 /* OnboardingModel.swift in Sources */,
 				EC06243C2B5C50430004B5E4 /* NewsView.swift in Sources */,
 				EC9195B52B59AC67000EF206 /* AuthViewModel.swift in Sources */,
@@ -617,7 +602,6 @@
 				EC0624432B5C65490004B5E4 /* DetailVC.swift in Sources */,
 				EC9195952B59759E000EF206 /* TitleLabel.swift in Sources */,
 				EC9195A92B5992C3000EF206 /* String+Ext.swift in Sources */,
-				EC0624262B5BD8F90004B5E4 /* SupportVC.swift in Sources */,
 				EC9195702B594F2D000EF206 /* AppDelegate.swift in Sources */,
 				EC9195D42B59C1BE000EF206 /* SearchVC.swift in Sources */,
 				EC9195C22B59B5D4000EF206 /* OnboardingViewModel.swift in Sources */,

@@ -61,8 +61,7 @@ final class HelpAndSupportVC: UIViewController, MFMailComposeViewControllerDeleg
         
         descriptionLabel.snp.makeConstraints { make in
             make.top.equalTo(headLabel.snp.bottom).offset(30)
-            make.leading.equalToSuperview().offset(20)
-            make.trailing.equalToSuperview().offset(-20)
+            make.leading.trailing.equalToSuperview().inset(20)
         }
     }
     
@@ -70,7 +69,7 @@ final class HelpAndSupportVC: UIViewController, MFMailComposeViewControllerDeleg
         view.addSubview(user)
         
         user.snp.makeConstraints { make in
-            make.top.equalTo(descriptionLabel.snp.bottom).offset(40)
+            make.top.equalTo(descriptionLabel.snp.bottom).offset(50)
             make.leading.equalToSuperview().offset(10)
             make.trailing.equalToSuperview().offset(-10)
             make.height.equalTo(100)

@@ -9,9 +9,10 @@ import UIKit
 import SnapKit
 
 final class SettingTableViewCell: UITableViewCell {
+    // MARK: - Properties
     static let identifier = "SettingTableViewCell"
     
-    //MARK: - Properties
+    // MARK: - UI Elements
     private lazy var iconContainer: UIView = {
         let view = UIView()
         view.clipsToBounds = true
@@ -33,29 +34,30 @@ final class SettingTableViewCell: UITableViewCell {
         return label
     }()
     
-    //MARK: - Init
+    // MARK: - Initializers
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        contentView.addSubview(iconContainer)
+        contentView.addSubviews(label, iconContainer)
         iconContainer.addSubview(iconImageView)
-        contentView.addSubview(label)
         
         contentView.clipsToBounds = true
         accessoryType = .disclosureIndicator
-        configureUI()
     }
     
     required init?(coder: NSCoder) {
-        fatalError()
+        fatalError("init(coder:) has not been implemented")
     }
     
-    private func configureUI() {
+    // MARK: - Layout Subviews
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
         let size: CGFloat = contentView.frame.size.height - 12
-        let imageSize: CGFloat = size / 1.5
+        let imageSize: CGFloat = size/1.5
         
         iconContainer.snp.makeConstraints { make in
-            make.leading.equalToSuperview().offset(16)
+            make.leading.equalToSuperview().offset(15)
             make.width.height.equalTo(size)
             make.centerY.equalToSuperview()
         }
@@ -64,13 +66,14 @@ final class SettingTableViewCell: UITableViewCell {
             make.width.height.equalTo(imageSize)
             make.center.equalToSuperview()
         }
-        
+       
         label.snp.makeConstraints { make in
             make.leading.equalTo(iconContainer.snp.trailing).offset(20)
             make.centerY.equalToSuperview()
         }
     }
     
+    // MARK: - Prepare For Reuse
     override func prepareForReuse() {
         super.prepareForReuse()
         iconImageView.image = nil
@@ -78,7 +81,8 @@ final class SettingTableViewCell: UITableViewCell {
         iconContainer.backgroundColor = nil
     }
     
-    func configure(with model: SettingsOption) {
+    // MARK: - Configure Cell
+    func configure(with model: SettingsOption){
         label.text = model.title
         iconImageView.image = model.icon
         iconContainer.backgroundColor = model.iconBackgrondColor

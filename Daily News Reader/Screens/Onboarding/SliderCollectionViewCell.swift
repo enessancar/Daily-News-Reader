@@ -64,8 +64,7 @@ final class SliderCollectionViewCell: UICollectionViewCell {
         
         titleLabel.snp.makeConstraints { make in
             make.top.equalTo(lottieView.snp.bottom).offset(40)
-            make.leading.equalToSuperview().offset(20)
-            make.trailing.equalToSuperview().offset(-20)
+            make.leading.trailing.equalToSuperview().inset(20)
         }
     }
     
